@@ -1,0 +1,646 @@
+<html>
+<link rel="stylesheet" href="../../../format_hauptseite.css" type="text/css">
+<body>
+<h1><u><div align="center">Snakin'</div></u></h1>
+<center>
+<p>
+<applet code = Main width=560 height=420>
+<!-- How to make a new level:
+1.) Copy one existing level and paste it at the last position of before the </applet>
+tag
+
+2.) Rename all <param name="Level? <- number of the level, for example if you are creating level 5, then all params of this level should look like <param name="Level5_..." value=" ... ">
+
+3.) Replace the param values with your own ones:
+
+a) Author: your name
+b) Name: Level name
+c) Comment: your comment
+d) WallColor... : enter a RGB value (please no hex values), these values become      the color of your walls
+e) The level: Every Level has 30 Lines and 40 chars per line:
+   "b": means border, please leave this as it is
+   ":": means that the snake can move here
+   "v": means that here will be a wall in your level
+
+4.) Please leave the first 10 chars in line 15 as they are (":") because the snake will start moving here
+
+5.) It is almost done: but please set the Levels_in_total parameter at the beginning of the file to the correct value (number of all levels)
+
+6.) Thats it, I hope it works
+-->
+
+<param name="Levels_in_total" value="15"><!-- dont forget to reset after adding a level -->
+
+<!-- Level 1 -->
+<param name="Level1_Author" value="FBI">
+<param name="Level1_Name" value="Snakin Level 1">
+<param name="Level1_Comment" value="This is easy">
+<param name="Level1_WallColor_Red" value="100">
+<param name="Level1_WallColor_Green" value="0">
+<param name="Level1_WallColor_Blue" value="255">
+
+
+<param name="Level1_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level1_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line2" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line3" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line4" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line5" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line6" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line7" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line8" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line9" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line10" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line11" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line12" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line13" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line14" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line15" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line16" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line17" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line18" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line19" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line20" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line21" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line22" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line23" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line24" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line25" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line26" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line27" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level1_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+<!-- Level 2 -->
+<param name="Level2_Author" value="FBI">
+<param name="Level2_Name" value="Snakin Level 2">
+<param name="Level2_Comment" value="Getting harder">
+<param name="Level2_WallColor_Red" value="100">
+<param name="Level2_WallColor_Green" value="0">
+<param name="Level2_WallColor_Blue" value="255">
+
+
+<param name="Level2_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level2_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line2" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line3" value= "b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level2_Line4" value= "b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level2_Line5" value= "b::::::vvvvvvv::::::::::::vvvvvvv::::::b">
+<param name="Level2_Line6" value= "b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level2_Line7" value= "b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level2_Line8" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line9" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line10" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line11" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line12" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line13" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line14" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line15" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line16" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line17" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line18" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line19" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line20" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line21" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line22" value="b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level2_Line23" value="b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level2_Line24" value="b::::::vvvvvvv::::::::::::vvvvvvv::::::b">
+<param name="Level2_Line25" value="b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level2_Line26" value="b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level2_Line27" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level2_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+<!-- Level 3 -->
+<param name="Level3_Author" value="FBI">
+<param name="Level3_Name" value="Snakin Level 3">
+<param name="Level3_Comment" value="Do you dare?">
+<param name="Level3_WallColor_Red" value="100">
+<param name="Level3_WallColor_Green" value="0">
+<param name="Level3_WallColor_Blue" value="255">
+
+
+<param name="Level3_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level3_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level3_Line2" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level3_Line3" value= "b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level3_Line4" value= "b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level3_Line5" value= "b::::::vvvvvvv::::::::::::vvvvvvv::::::b">
+<param name="Level3_Line6" value= "b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level3_Line7" value= "b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level3_Line8" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level3_Line9" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level3_Line10" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level3_Line11" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level3_Line12" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level3_Line13" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level3_Line14" value="b::::::::::vvvvvvvvvvvvvvvvv:::::::::::b">
+<param name="Level3_Line15" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level3_Line16" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level3_Line17" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level3_Line18" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level3_Line19" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level3_Line20" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level3_Line21" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level3_Line22" value="b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level3_Line23" value="b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level3_Line24" value="b::::::vvvvvvv::::::::::::vvvvvvv::::::b">
+<param name="Level3_Line25" value="b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level3_Line26" value="b:::::::::v::::::::::::::::::v:::::::::b">
+<param name="Level3_Line27" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level3_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level3_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+<!-- Level 4 -->
+<param name="Level4_Author" value="FBI">
+<param name="Level4_Name" value="Snakin Level 4">
+<param name="Level4_Comment" value="Four rooms">
+<param name="Level4_WallColor_Red" value="0">
+<param name="Level4_WallColor_Green" value="100">
+<param name="Level4_WallColor_Blue" value="255">
+
+
+<param name="Level4_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level4_Line1" value= "b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line2" value= "b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line3" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level4_Line4" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level4_Line5" value= "b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line6" value= "b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line7" value= "b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line8" value= "b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line9" value= "b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line10" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line11" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line12" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line13" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line14" value="bvvvvvvvvvv::vvvvvvvvvvvvvv::vvvvvvvvvvb">
+<param name="Level4_Line15" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line16" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line17" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line18" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line19" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line20" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line21" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line22" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line23" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line24" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line25" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level4_Line26" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level4_Line27" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line28" value="b::::::::::::::::::v:::::::::::::::::::b">
+<param name="Level4_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+
+<!-- Level 5 -->
+<param name="Level5_Author" value="FBI">
+<param name="Level5_Name" value="Snakin Level 5">
+<param name="Level5_Comment" value="SSSSnake">
+<param name="Level5_WallColor_Red" value="100">
+<param name="Level5_WallColor_Green" value="100">
+<param name="Level5_WallColor_Blue" value="255">
+
+
+<param name="Level5_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level5_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line2" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line3" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line4" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line5" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line6" value= "b:::::::vvvvvvvvvvvvv::vvvvvvvvvvvvvvvvb">
+<param name="Level5_Line7" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line8" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line9" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line10" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line11" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line12" value="bvvvvvvvvvvvvvvvvvvvv::vvvvvvvvv:::::::b">
+<param name="Level5_Line13" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line14" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line15" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line16" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line17" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line18" value="b:::::::vvvvvvvvvvvvv::vvvvvvvvvvvvvvvvb">
+<param name="Level5_Line19" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line20" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line21" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line22" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line23" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line24" value="bvvvvvvvvvvvvvvvvvvvv::vvvvvvvvv:::::::b">
+<param name="Level5_Line25" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line26" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line27" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level5_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+
+<!-- Level 6 -->
+<param name="Level6_Author" value="FBI">
+<param name="Level6_Name" value="Snakin Level 5">
+<param name="Level6_Comment" value="Block Array">
+<param name="Level6_WallColor_Red" value="100">
+<param name="Level6_WallColor_Green" value="100">
+<param name="Level6_WallColor_Blue" value="255">
+
+
+<param name="Level6_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level6_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line2" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line3" value= "b::vv:::vv:::vv:::vv:::vv:::vv:::vv::::b">
+<param name="Level6_Line4" value= "b::vv:::vv:::vv:::vv:::vv:::vv:::vv::::b">
+<param name="Level6_Line5" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line6" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line7" value= "b::vv:::vv:::vv:::vv:::vv:::vv:::vv::::b">
+<param name="Level6_Line8" value= "b::vv:::vv:::vv:::vv:::vv:::vv:::vv::::b">
+<param name="Level6_Line9" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line10" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line11" value="b::vv:::vv:::vv:::vv:::vv:::vv:::vv::::b">
+<param name="Level6_Line12" value="b::vv:::vv:::vv:::vv:::vv:::vv:::vv::::b">
+<param name="Level6_Line13" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line14" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line15" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line16" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line17" value="b::vv:::vv:::vv:::vv:::vv:::vv:::vv::::b">
+<param name="Level6_Line18" value="b::vv:::vv:::vv:::vv:::vv:::vv:::vv::::b">
+<param name="Level6_Line19" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line20" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line21" value="b::vv:::vv:::vv:::vv:::vv:::vv:::vv::::b">
+<param name="Level6_Line22" value="b::vv:::vv:::vv:::vv:::vv:::vv:::vv::::b">
+<param name="Level6_Line23" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line24" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line25" value="b::vv:::vv:::vv:::vv:::vv:::vv:::vv::::b">
+<param name="Level6_Line26" value="b::vv:::vv:::vv:::vv:::vv:::vv:::vv::::b">
+<param name="Level6_Line27" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level6_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+
+<!-- Level 7 -->
+<param name="Level7_Author" value="FBI">
+<param name="Level7_Name" value="Snakin Level 7">
+<param name="Level7_Comment" value="Try it">
+<param name="Level7_WallColor_Red" value="100">
+<param name="Level7_WallColor_Green" value="0">
+<param name="Level7_WallColor_Blue" value="255">
+
+
+<param name="Level7_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level7_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level7_Line2" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level7_Line3" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level7_Line4" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level7_Line5" value= "b::::::::::::::::::vv::::::::::::::::::b">
+<param name="Level7_Line6" value= "b::::::::::::::::vv::vv::::::::::::::::b">
+<param name="Level7_Line7" value= "b::::::::::::::vv::::::vv::::::::::::::b">
+<param name="Level7_Line8" value= "b::::::::::::vv::::::::::vv::::::::::::b">
+<param name="Level7_Line9" value= "b::::::::::vv::::::::::::::vv::::::::::b">
+<param name="Level7_Line10" value="b::::::::vv::::::::::::::::::vv::::::::b">
+<param name="Level7_Line11" value="b::::::vv::::::::::::::::::::::vv::::::b">
+<param name="Level7_Line12" value="b::::vv::::::::::::::::::::::::::vv::::b">
+<param name="Level7_Line13" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level7_Line14" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level7_Line15" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level7_Line16" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level7_Line17" value="b::::vv::::::::::::::::::::::::::vv::::b">
+<param name="Level7_Line18" value="b::::::vv::::::::::::::::::::::vv::::::b">
+<param name="Level7_Line19" value="b::::::::vv::::::::::::::::::vv::::::::b">
+<param name="Level7_Line20" value="b::::::::::vv::::::::::::::vv::::::::::b">
+<param name="Level7_Line21" value="b::::::::::::vv::::::::::vv::::::::::::b">
+<param name="Level7_Line22" value="b::::::::::::::vv::::::vv::::::::::::::b">
+<param name="Level7_Line23" value="b::::::::::::::::vv::vv::::::::::::::::b">
+<param name="Level7_Line24" value="b::::::::::::::::::vv::::::::::::::::::b">
+<param name="Level7_Line25" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level7_Line26" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level7_Line27" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level7_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level7_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+
+<!-- Level 8 -->
+<param name="Level8_Author" value="FBI">
+<param name="Level8_Name" value="Snakin Level 8">
+<param name="Level8_Comment" value="Really hard">
+<param name="Level8_WallColor_Red" value="100">
+<param name="Level8_WallColor_Green" value="0">
+<param name="Level8_WallColor_Blue" value="255">
+
+
+<param name="Level8_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level8_Line1" value= "bbbbbbbbbb:::::::::::::::::::::::::::::b">
+<param name="Level8_Line2" value= "bbbbbbbb:::::::::::::::::::::::::::::::b">
+<param name="Level8_Line3" value= "bbbbbb:::::::::::::::::::::::::::::::::b">
+<param name="Level8_Line4" value= "bbbb:::::::::::::::::::::::::::::::::::b">
+<param name="Level8_Line5" value= "bb:::::::::::::::::vv::::::::::::::::::b">
+<param name="Level8_Line6" value= "b::::::::::::::::vv::vv::::::::::::::::b">
+<param name="Level8_Line7" value= "b::::::::::::::vv::::::vv::::::::::::::b">
+<param name="Level8_Line8" value= "b::::::::::::vv::::::::::vv::::::::::::b">
+<param name="Level8_Line9" value= "b::::::::::vv::::::::::::::vv::::::::::b">
+<param name="Level8_Line10" value="b::::::::vv::::::::::::::::::vv::::::::b">
+<param name="Level8_Line11" value="b::::::vv::::::::::vv::::::::::vv::::::b">
+<param name="Level8_Line12" value="b::::vv::::::::::::vv::::::::::::vv::::b">
+<param name="Level8_Line13" value="b::::::::::::::::::vv::::::::::::::::::b">
+<param name="Level8_Line14" value="b::::::::::::::::::vv::::::::::::::::::b">
+<param name="Level8_Line15" value="b::::::::::::::::::vv::::::::::::::::::b">
+<param name="Level8_Line16" value="b::::::::::::::::::vv::::::::::::::::::b">
+<param name="Level8_Line17" value="b::::vv::::::::::::vv::::::::::::vv::::b">
+<param name="Level8_Line18" value="b::::::vv::::::::::vv::::::::::vv::::::b">
+<param name="Level8_Line19" value="b::::::::vv::::::::::::::::::vv::::::::b">
+<param name="Level8_Line20" value="b::::::::::vv::::::::::::::vv::::::::::b">
+<param name="Level8_Line21" value="b::::::::::::vv::::::::::vv::::::::::::b">
+<param name="Level8_Line22" value="b::::::::::::::vv::::::vv::::::::::::::b">
+<param name="Level8_Line23" value="b::::::::::::::::vv::vv::::::::::::::::b">
+<param name="Level8_Line24" value="b::::::::::::::::::vv:::::::::::::::::bb">
+<param name="Level8_Line25" value="b:::::::::::::::::::::::::::::::::::bbbb">
+<param name="Level8_Line26" value="b:::::::::::::::::::::::::::::::::bbbbbb">
+<param name="Level8_Line27" value="b:::::::::::::::::::::::::::::::bbbbbbbb">
+<param name="Level8_Line28" value="b:::::::::::::::::::::::::::::bbbbbbbbbb">
+<param name="Level8_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+
+<!-- Level 9 -->
+<param name="Level9_Author" value="FBI">
+<param name="Level9_Name" value="Snakin Level 9">
+<param name="Level9_Comment" value="Symmetrie">
+<param name="Level9_WallColor_Red" value="100">
+<param name="Level9_WallColor_Green" value="0">
+<param name="Level9_WallColor_Blue" value="255">
+
+
+<param name="Level9_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level9_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level9_Line2" value= "b::vv::::::::::::::::::::::::::::::vv::b">
+<param name="Level9_Line3" value= "b::::vv::::::::::::::::::::::::::vv::::b">
+<param name="Level9_Line4" value= "b::::::vv::::::::::::::::::::::vv::::::b">
+<param name="Level9_Line5" value= "b::::::::vv::::::::::::::::::vv::::::::b">
+<param name="Level9_Line6" value= "b::::::::::vv::::::::::::::vv::::::::::b">
+<param name="Level9_Line7" value= "b::::::::::::vv::::::::::vv::::::::::::b">
+<param name="Level9_Line8" value= "b::::::::::::::vv::::::vv::::::::::::::b">
+<param name="Level9_Line9" value= "b::::::::::::::::vv::vv::::::::::::::::b">
+<param name="Level9_Line10" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level9_Line11" value="b::::::::::::::::::::::::::::::::::vv::b">
+<param name="Level9_Line12" value="b::::::::::::::::::::::::::::::::vv::::b">
+<param name="Level9_Line13" value="b::::::::::::::::::::::::::::::vv::::::b">
+<param name="Level9_Line14" value="b::::::::::::::::::::::::::::vv::::::::b">
+<param name="Level9_Line15" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level9_Line16" value="b::::::::::::::::::::::::::::vv::::::::b">
+<param name="Level9_Line17" value="b::::::::::::::::::::::::::::::vv::::::b">
+<param name="Level9_Line18" value="b::::::::::::::::::::::::::::::::vv::::b">
+<param name="Level9_Line19" value="b::::::::::::::::::::::::::::::::::vv::b">
+<param name="Level9_Line20" value="b::::::::::::::::vv::vv::::::::::::::::b">
+<param name="Level9_Line21" value="b::::::::::::::vv::::::vv::::::::::::::b">
+<param name="Level9_Line22" value="b::::::::::::vv::::::::::vv::::::::::::b">
+<param name="Level9_Line23" value="b::::::::::vv::::::::::::::vv::::::::::b">
+<param name="Level9_Line24" value="b::::::::vv::::::::::::::::::vv::::::::b">
+<param name="Level9_Line25" value="b::::::vv::::::::::::::::::::::vv::::::b">
+<param name="Level9_Line26" value="b::::vv::::::::::::::::::::::::::vv::::b">
+<param name="Level9_Line27" value="b::vv::::::::::::::::::::::::::::::vv::b">
+<param name="Level9_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level9_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+<!-- Level 10 -->
+<param name="Level10_Author" value="FBI">
+<param name="Level10_Name" value="Snakin Level 10">
+<param name="Level10_Comment" value="Assymetrie">
+<param name="Level10_WallColor_Red" value="0">
+<param name="Level10_WallColor_Green" value="255">
+<param name="Level10_WallColor_Blue" value="100">
+
+
+<param name="Level10_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level10_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level10_Line2" value= "b::::vvv:::::::::::::::::::::::::::::::b">
+<param name="Level10_Line3" value= "b::::vvv:::::::::::::::::::::::::::::::b">
+<param name="Level10_Line4" value= "b::::vvv::::vvv::::::::::::::::::::::::b">
+<param name="Level10_Line5" value= "b:::::::::::vvv::::::::::::::::::::::::b">
+<param name="Level10_Line6" value= "b:::::::::::vvv::::vvv:::::::::::::::::b">
+<param name="Level10_Line7" value= "b::::::::::::::::::vvv:::::::::::::::::b">
+<param name="Level10_Line8" value= "b::::::::::::::::::vvv::::vvv::::::::::b">
+<param name="Level10_Line9" value= "b:::::::::::::::::::::::::vvv::::::::::b">
+<param name="Level10_Line10" value="b:::::::::::::::::::::::::vvv::::vvv:::b">
+<param name="Level10_Line11" value="b::::::::::::::::::::::::::::::::vvv:::b">
+<param name="Level10_Line12" value="b::::::::::::::::::::::::::::::::vvv:::b">
+<param name="Level10_Line13" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level10_Line14" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level10_Line15" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level10_Line16" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level10_Line17" value="b:::::::::::::::::::::::::::::vvv::::::b">
+<param name="Level10_Line18" value="b:::::::::::::::::::::::::::::vvv::::::b">
+<param name="Level10_Line19" value="b::::::::::::::::::::::vvv::::vvv::::::b">
+<param name="Level10_Line20" value="b::::::::::::::::::::::vvv:::::::::::::b">
+<param name="Level10_Line21" value="b:::::::::::::::vvv::::vvv:::::::::::::b">
+<param name="Level10_Line22" value="b:::::::::::::::vvv::::::::::::::::::::b">
+<param name="Level10_Line23" value="b::::::::vvv::::vvv::::::::::::::::::::b">
+<param name="Level10_Line24" value="b::::::::vvv:::::::::::::::::::::::::::b">
+<param name="Level10_Line25" value="b:vvv::::vvv:::::::::::::::::::::::::::b">
+<param name="Level10_Line26" value="b:vvv::::::::::::::::::::::::::::::::::b">
+<param name="Level10_Line27" value="b:vvv::::::::::::::::::::::::::::::::::b">
+<param name="Level10_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level10_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+<!-- Level 11 -->
+<param name="Level11_Author" value="FBI">
+<param name="Level11_Name" value="Snakin Level 11">
+<param name="Level11_Comment" value="Citron">
+<param name="Level11_WallColor_Red" value="255">
+<param name="Level11_WallColor_Green" value="255">
+<param name="Level11_WallColor_Blue" value="0">
+
+
+<param name="Level11_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level11_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level11_Line2" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level11_Line3" value= "b:::::::::::::::::::::v::::::::::::::::b">
+<param name="Level11_Line4" value= "b::::::::::::::::::::v:::::::::::::::::b">
+<param name="Level11_Line5" value= "b:::::::::::::::::::v::::::::::::::::::b">
+<param name="Level11_Line6" value= "b::::::::::::::::::vvv:::::::::::::::::b">
+<param name="Level11_Line7" value= "b:::::::::::::::::vvvvv::::::::::::::::b">
+<param name="Level11_Line8" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level11_Line9" value= "b:::::::::::::vv:::::::::vv::::::::::::b">
+<param name="Level11_Line10" value="b::::::::::::vv:::::::::::vv:::::::::::b">
+<param name="Level11_Line11" value="b:::::::::::vv:::::::::::::vv::::::::::b">
+<param name="Level11_Line12" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level11_Line13" value="b:::::::::vv:::::::::::::::::vv::::::::b">
+<param name="Level11_Line14" value="b:::::::::vv:::::::::::::::::vv::::::::b">
+<param name="Level11_Line15" value="b::::::::::::::::::::::::::::vv::::::::b">
+<param name="Level11_Line16" value="b:::::::::vv:::::::::::::::::vv::::::::b">
+<param name="Level11_Line17" value="b:::::::::vv:::::::::::::::::::::::::::b">
+<param name="Level11_Line18" value="b:::::::::::vv:::::::::::::vv::::::::::b">
+<param name="Level11_Line19" value="b::::::::::::vv:::::::::::vv:::::::::::b">
+<param name="Level11_Line20" value="b:::::::::::::vv:::::::::vv::::::::::::b">
+<param name="Level11_Line21" value="b::::::::::::::vv:::::::vv:::::::::::::b">
+<param name="Level11_Line22" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level11_Line23" value="b:::::::::::::::::vvvvv::::::::::::::::b">
+<param name="Level11_Line24" value="b::::::::::::::::::vvv:::::::::::::::::b">
+<param name="Level11_Line25" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level11_Line26" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level11_Line27" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level11_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level11_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+<!-- Level 12 -->
+<param name="Level12_Author" value="FBI">
+<param name="Level12_Name" value="Snakin Level 12">
+<param name="Level12_Comment" value="Face">
+<param name="Level12_WallColor_Red" value="0">
+<param name="Level12_WallColor_Green" value="255">
+<param name="Level12_WallColor_Blue" value="100">
+
+
+<param name="Level12_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level12_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level12_Line2" value= "b:::::::::::::v::v:::v:::v:::::::::::::b">
+<param name="Level12_Line3" value= "b:::::::::::::v:::v::v::v::::::::::::::b">
+<param name="Level12_Line4" value= "b::::::::::::::v::v::v::v::::::::::::::b">
+<param name="Level12_Line5" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level12_Line6" value= "b::::::::::vvvvv::::::::vvvvv::::::::::b">
+<param name="Level12_Line7" value= "b:::::vv::v:::::v::::::v:::::v::vv:::::b">
+<param name="Level12_Line8" value= "b::::v::v:::vvv::::::::::vvv:::v::v::::b">
+<param name="Level12_Line9" value= "b::::v::::::vvv::::::::::vvv::::::v::::b">
+<param name="Level12_Line10" value="b::::v::v:::vvv::::::::::vvv:::v::v::::b">
+<param name="Level12_Line11" value="b:::::v:v::::::::::::::::::::::v:v:::::b">
+<param name="Level12_Line12" value="b:::::::v::::::::::::::::::::::v:::::::b">
+<param name="Level12_Line13" value="b::::::::::::::::::vv::::::::::::::::::b">
+<param name="Level12_Line14" value="b:::::::::::::::::vvvv:::::::::::::::::b">
+<param name="Level12_Line15" value="b:::::::::::::::::vvvv:::::::::::::::::b">
+<param name="Level12_Line16" value="b::::::::::::::::::vv::::::::::::::::::b">
+<param name="Level12_Line17" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level12_Line18" value="b:::::::::::vv::::::::::::vv:::::::::::b">
+<param name="Level12_Line19" value="b:::::::::::::vv::::::::vv:::::::::::::b">
+<param name="Level12_Line20" value="b:::::::::::::::vv::::vv:::::::::::::::b">
+<param name="Level12_Line21" value="b:::::::::::::::::vvvv:::::::::::::::::b">
+<param name="Level12_Line22" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level12_Line23" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level12_Line24" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level12_Line25" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level12_Line26" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level12_Line27" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level12_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level12_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+<!-- Level 13 -->
+<param name="Level13_Author" value="FBI">
+<param name="Level13_Name" value="Snakin Level 13">
+<param name="Level13_Comment" value="Soccerteam">
+<param name="Level13_WallColor_Red" value="100">
+<param name="Level13_WallColor_Green" value="0">
+<param name="Level13_WallColor_Blue" value="200">
+
+<param name="Level13_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level13_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level13_Line2" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level13_Line3" value= "b::::::::vvv:::::::::::::::::vvv:::::::b">
+<param name="Level13_Line4" value= "b::::::::vvv:::::::::::::::::vvv:::::::b">
+<param name="Level13_Line5" value= "b::::v:::vvv:::v:::::::::v:::vvv::v::::b">
+<param name="Level13_Line6" value= "b:::::v:::v:::v:::::::::::v:::v:::v::::b">
+<param name="Level13_Line7" value= "b::::::vbbbbbv:::::::::::::vbbbbbv:::::b">
+<param name="Level13_Line8" value= "b:::::::bbbbb:::::::::::::::bbbbb::::::b">
+<param name="Level13_Line9" value= "b:::::::bbbbb:::::::::::::::bbbbb::::::b">
+<param name="Level13_Line10" value="b::::::::bbb:::::::::::::::::bbb:::::::b">
+<param name="Level13_Line11" value="b::::::::v:v:::::::::::::::::v:v:::::::b">
+<param name="Level13_Line12" value="b::::::vvv:vvv:::::::::::::vvv:vvv:::::b">
+<param name="Level13_Line13" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level13_Line14" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level13_Line15" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level13_Line16" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level13_Line17" value="b::::::::::::::::::::::::::::vvv:::::::b">
+<param name="Level13_Line18" value="b::::::::::::::::::::::::::::vvv:::::::b">
+<param name="Level13_Line19" value="b::::::::::::::::::::::::v:::vvv:::v:::b">
+<param name="Level13_Line20" value="b:::::::::::::::::::::::::v:::v:::v::::b">
+<param name="Level13_Line21" value="b::::::::::::::::::::::::::vbbbbbv:::::b">
+<param name="Level13_Line22" value="b:::::::::::::::::::::::::::bbbbb::::::b">
+<param name="Level13_Line23" value="b:::::::::::::::::::::::::::bbbbb::::::b">
+<param name="Level13_Line24" value="b:::::::::bb:::::::::::::::::bbb:::::::b">
+<param name="Level13_Line25" value="b::::::::bbbb::::::::::::::::v:v:::::::b">
+<param name="Level13_Line26" value="b:::::::::bb:::::::::::::::vvv:vvv:::::b">
+<param name="Level13_Line27" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level13_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level13_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+
+<!-- Level 14 -->
+<param name="Level14_Author" value="FBI">
+<param name="Level14_Name" value="Snakin Level 14">
+<param name="Level14_Comment" value="Love and peace">
+<param name="Level14_WallColor_Red" value="255">
+<param name="Level14_WallColor_Green" value="0">
+<param name="Level14_WallColor_Blue" value="0">
+
+
+<param name="Level14_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level14_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level14_Line2" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level14_Line3" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level14_Line4" value= "b::::::::::v::::v::::::::::::::::::::::b">
+<param name="Level14_Line5" value= "b:::::::::vvv::vvv:::::::::::::::::::::b">
+<param name="Level14_Line6" value= "b::::::::vvvvvvvvvv::::::::::::::::::::b">
+<param name="Level14_Line7" value= "b:::::::vvvvvvvvvvvv:::::::::::::::::::b">
+<param name="Level14_Line8" value= "b::::::::vvvvvvvvvv::::::::::::::::::::b">
+<param name="Level14_Line9" value= "b:::::::::vvvvvvvv:::::::::::::::::::::b">
+<param name="Level14_Line10" value="b::::::::::vvvvvv::::::::::::::::::::::b">
+<param name="Level14_Line11" value="b:::::::::::vvvv::::::::::vvv::::::::::b">
+<param name="Level14_Line12" value="b::::::::::::vv:::::::::vv:v:vv::::::::b">
+<param name="Level14_Line13" value="b:::::::::::::::::::::vv:::::::vv::::::b">
+<param name="Level14_Line14" value="b::::::::::::::::::::v:::::v:::::v:::::b">
+<param name="Level14_Line15" value="b::::::::::::::::::::::::::v:::::::::::b">
+<param name="Level14_Line16" value="b::::::::::::::::::::v::::vvv::::v:::::b">
+<param name="Level14_Line17" value="b::::::::::::::::::::v:::vvvvv:::v:::::b">
+<param name="Level14_Line18" value="b:::::::::::::::::::::vvvvvvvvvvv::::::b">
+<param name="Level14_Line19" value="b:::::::::::::::::::::::vvvvvvv::::::::b">
+<param name="Level14_Line20" value="b:::::::::::::::::::::::::vvv::::::::::b">
+<param name="Level14_Line21" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level14_Line22" value="b::::v:::::vvvv::v:::::::v::vvvv:::::::b">
+<param name="Level14_Line23" value="b::::v::::::::v:::v:::::v:::v::::::::::b">
+<param name="Level14_Line24" value="b::::v:::::v::v::::v:::v::::v:vv:::::::b">
+<param name="Level14_Line25" value="b::::v:::::v::::::::v:::::::v::::::::::b">
+<param name="Level14_Line26" value="b::::vvvv::vvvv::::::v::::::vvvv:::::::b">
+<param name="Level14_Line27" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level14_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level14_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+<!-- Level 15 -->
+<param name="Level15_Author" value="FBI">
+<param name="Level15_Name" value="Snakin Level 15">
+<param name="Level15_Comment" value="The End">
+<param name="Level15_WallColor_Red" value="100">
+<param name="Level15_WallColor_Green" value="0">
+<param name="Level15_WallColor_Blue" value="255">
+
+
+<param name="Level15_Line0" value= "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+<param name="Level15_Line1" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level15_Line2" value= "b:::vvvvv::v::v::v::vvvv:::::::::::::::b">
+<param name="Level15_Line3" value= "b:::::v::::v:::::v::v::::::::::::::::::b">
+<param name="Level15_Line4" value= "b:::::v::::vvvv::v::v:vv:::::::::::::::b">
+<param name="Level15_Line5" value= "b:::::v:::::::v::v:::::v:::::::::::::::b">
+<param name="Level15_Line6" value= "b:::::v::::v::v::v::vvvv:::::::::::::::b">
+<param name="Level15_Line7" value= "b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level15_Line8" value= "b:::::::::::::::::::::v::vvvv::::::::::b">
+<param name="Level15_Line9" value= "b:::::::::::::::::::::v::v:::::::::::::b">
+<param name="Level15_Line10" value="b:::::::::::::::::::::v::v:vv::::::::::b">
+<param name="Level15_Line11" value="b:::::::::::::::::::::v:::::v::::::::::b">
+<param name="Level15_Line12" value="b:::::::::::::::::::::v::vvvv::::::::::b">
+<param name="Level15_Line13" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level15_Line14" value="b:::::::::::vvvvv::v::v::vvvv::::::::::b">
+<param name="Level15_Line15" value="b:::::::::::::v::::v:::::v:::::::::::::b">
+<param name="Level15_Line16" value="b:::::::::::::v::::vvvv::v:vv::::::::::b">
+<param name="Level15_Line17" value="b:::::::::::::v:::::::v::v:::::::::::::b">
+<param name="Level15_Line18" value="b:::::::::::::v::::v::v::vvvv::::::::::b">
+<param name="Level15_Line19" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level15_Line20" value="b::::::::vvvv::v:::v::vvv::::::::::::::b">
+<param name="Level15_Line21" value="b::::::::v:::::vv::v::v::v:::::::::::::b">
+<param name="Level15_Line22" value="b::::::::v:vv::v:::v:::::::::::::::::::b">
+<param name="Level15_Line23" value="b::::::::v:::::v::vv::v::v:::::::::::::b">
+<param name="Level15_Line24" value="b::::::::vvvv::v:::v::vvv::::::::::::::b">
+<param name="Level15_Line25" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level15_Line26" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level15_Line27" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level15_Line28" value="b::::::::::::::::::::::::::::::::::::::b">
+<param name="Level15_Line29" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+</applet></p></center>
+<p align="justify">
+One Player Modus: Nun ja, eigentlich gibt es zu diesem Spiel nicht viel zu sagen, oder doch? Ihr k&ouml;nnt die Schlange mit den Cursortasten steuern und mit Space pausiert ihr das Spiel. Am Anfang oder auch, wenn ihr alle eure (zu Beginn) 5 Leben verbraucht habt, k&ouml;nnt ihr mit e = easy, m = middle, h = hard einen neuen Schwierigkeitsgrad (Geschwindigkeit) w&auml;hlen. Umso h&ouml;her der Schwierigkeitsgrad, umso mehr Punkte erhaltet ihr f&uuml;r ein gefressenes Goody! Immer wenn ihr 1000 Punkte erreicht habt, dann erscheint ein blaues Goody, mit dem ihr, wenn ihr es esst, ein neues Leben bekommt.<br>
+Two Player Modus: Wenn ihr gegen den Computer antretet, dann werden die Regeln allerdings etwas komplizierter. Wieder m&uuml;ssen 15 Goodys gegessen werden, um in das n&auml;chste Level zu gelangen. Ziel ist es m&ouml;glichst mehr Punkte als der Computer zu erreichen. Isst der Spieler ein Goody, so gehen die Punke auf sein Konto, isst es der Computer, so gehen die Punkte auf das Konto des Computers. Wer gegen die Schlange des Gegners rennt, der verliert nicht nur ein Leben, sondern ihm werden auch eine gewisse Zahl von Punkten abgezogen, auch wenn ihr als Erster eure 5 Leben verbraucht habt (es gibt keine Zusatzleben!), verliert ihr nochmal kr&auml;ftig Punkte. Also aufgepasst! Nicht nur nach den Goodys sehen, sondern auch versuchen den
+Computer in eine Lage zu bringen, in der er nur gegen eure Schlange fahren kann ;-) um zus&auml;tzlich Punkte zu kassieren! <br>
+Eine weitere Besonderheit an diesem Snakin Spiel ist allerdings, dass ihr eure eigenen Level bauen k&ouml;nnt. Dazu m&uuml;sst ihr euch das Spiel runterladen (Downloads) und dann dem HTML - Document ein neues Level hinzuf&uuml;gen. Wie das geht habe ich in dem HTML - File dokumentiert. Eine neue Stage erreicht ihr immer dann, wenn ihr 15 "Goodys" gefressen habt! Viel Spa&szlig;!</p>
+</body>
+</html>
